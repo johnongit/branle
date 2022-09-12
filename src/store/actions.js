@@ -8,7 +8,7 @@ import {processMentions, getPubKeyTagWithRelay} from '../utils/helpers'
 import {metadataFromEvent} from '../utils/event'
 import {mine} from '../pow'
 
-const TARGET_BITS = 10
+const TARGET_BITS = 20
 
 export function initKeys(store, keys) {
   store.commit('setKeys', keys)
