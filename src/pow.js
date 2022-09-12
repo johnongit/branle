@@ -3,7 +3,7 @@ const worker = new Worker(new URL('./pow-worker.js', import.meta.url))
 /**
  * Cancel jobs running longer than JOB_CANCEL_TIMEOUT milliseconds
  */
-const JOB_CANCEL_TIMEOUT = 60000
+const JOB_CANCEL_TIMEOUT = 120000
 
 const jobs = {}
 
