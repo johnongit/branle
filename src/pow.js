@@ -28,7 +28,7 @@ worker.onmessage = event => {
   }
 }
 
-export function mine(event, targetBits = 20) {
+export function mine(event, targetBits = 15) {
   let jobId = Math.random().toString().slice(-6)
 
   const p = new Promise((resolve, reject) => {
